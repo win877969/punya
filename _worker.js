@@ -700,24 +700,25 @@ const ed = 'RUR0dW5uZWw=';
  */
 function getวเลสConfig(userIDs, hostName) {
 	const commonUrlPart = `:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=%2F%3Fed%3D2048#${hostName}`;
-	const hashSeparator = "################################################################";
+	const hashSeparator = "-----------------------------------------------------------------------------------------------------------------------------";
 
 	// Split the userIDs into an array
 	const userIDArray = userIDs.split(",");
 
 	// Prepare output string for each userID
 	const output = userIDArray.map((userID) => {
-		const VlessMain = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart;
-		const VlessSec = atob(pt) + '://' + userID + atob(at) + พร็อกซีไอพี + commonUrlPart;
-		return `<h2>UUID: ${userID}</h2>${hashSeparator}\nv2ray default ip
+		const vlessTls = `vless://${userID}@${hostName}:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=/vl=35.219.15.90#VlessTls`
+        const vlessNtls = `vless://${userID}@${hostName}:80?path=/vl=35.219.15.90&security=none&encryption=none&host=${hostName}&fp=randomized&type=ws&sni=${hostName}#$VlessNtls`;
+	
+		return `<h2>UUID: ${userID}</h2>${hashSeparator}\nV2ray port 443
 ---------------------------------------------------------------
-${VlessMain}
-<button onclick='copyToClipboard("${VlessMain}")'><i class="fa fa-clipboard"></i> Copy Main</button>
+${vlessTls}
+<button onclick='copyToClipboard("${vlessTls}")'><i class="fa fa-clipboard"></i> Copy Main</button>
 ---------------------------------------------------------------
-v2ray with bestip
+v2ray port 80
 ---------------------------------------------------------------
-${VlessSec}
-<button onclick='copyToClipboard("${VlessSec}")'><i class="fa fa-clipboard"></i> Copy Sec</button>
+${vlessNtls}
+<button onclick='copyToClipboard("${vlessNtls}")'><i class="fa fa-clipboard"></i> Copy Sec</button>
 ---------------------------------------------------------------`;
 	}).join('\n');
 	const sublink = `https://${hostName}/sub/${userIDArray[0]}?format=clash`
@@ -727,19 +728,21 @@ ${VlessSec}
 	const header = `
 <p align='center'><img src='https://cloudflare-ipfs.com/ipfs/bafybeigd6i5aavwpr6wvnwuyayklq3omonggta4x2q7kpmgafj357nkcky' alt='' style='margin-bottom: -50px;'>
 <b style='font-size: 15px;'>
+<a href='https://github.com/win877969/zona' target='_blank'>ZONA VLESS</a></b>
+========================================
+VLESS ACCOUNT INFORMATION
+=========================================
 
-SELAMAT DATANG :</b>
-<b style='font-size: 15px;'></b>
-<a href='https://github.com/win877969/zona' target='_blank'>ZONA VLESS</a>
-<iframe src='https://ghbtns.com/github-btn.html?user=USERNAME&repo=REPOSITORY&type=star&count=true&size=large' frameborder='0' scrolling='0' width='170' height='30' title='GitHub'></iframe>
-<a href='//${hostName}/sub/${userIDArray[0]}' target='_blank'>Node Subscription Connection</a>
-<a href='clash://install-config?url=${encodeURIComponent(`https://${hostName}/sub/${userIDArray[0]}?format=clash`)}}' target='_blank'>Clash for Windows</a>
-<a href='${clash_link}' target='_blank'>Clash Subscription</a>
-<a href='${subbestip}' target='_blank'>BEST IP</a>
-<a href='clash://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>Clash Best ip</a>
-<a href='sing-box://import-remote-profile?url=${encodeURIComponent(subbestip)}' target='_blank'>singbox Best ip</a>
-<a href='sn://subscription?url=${encodeURIComponent(subbestip)}' target='_blank'>nekobox Best ip</a>
-<a href='v2rayng://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>v2rayNG Best ip</a></p>`;
+» DOMAIN      : ${hostName}
+» COUNTRY     : ID
+» USER ID     : ${userID}
+» PROXYIP     : 35.219.15.90
+» PORT TLS    : 443
+» PORT NTLS   : 80
+» SECURITY    : auto
+» NETWORK     : (WS)
+» PATH        :/vl=35.219.15.90
+
 
 	// HTML Head with CSS and FontAwesome library
 	const htmlHead = `

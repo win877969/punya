@@ -699,7 +699,8 @@ const ed = 'RUR0dW5uZWw=';
  * @returns {string}
  */
 function getวเลสConfig(userIDs, hostName) {
-	const commonUrlPart = `:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=%2F%3Fed%3D2048#${hostName}`;
+	const commonUrlPart = `:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=%/vl=35.219.15.90#${hostName}`;
+    const commonUrlPart1 = `:80?path=/vl=35.219.15.90&security=none&encryption=none&host=${hostName}&fp=randomized&type=ws&sni=${hostName}#$VlessNtls`;
 	const hashSeparator = "-----------------------------------------------------------------------------------------------------------------------------";
 
 	// Split the userIDs into an array
@@ -707,18 +708,17 @@ function getวเลสConfig(userIDs, hostName) {
 
 	// Prepare output string for each userID
 	const output = userIDArray.map((userID) => {
-		const vlessTls = `vless://${userID}@${hostName}:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=/vl=35.219.15.90#VlessTls`
-        const vlessNtls = `vless://${userID}@${hostName}:80?path=/vl=35.219.15.90&security=none&encryption=none&host=${hostName}&fp=randomized&type=ws&sni=${hostName}#$VlessNtls`;
-	
-		return `<h2>UUID: ${userID}</h2>${hashSeparator}\nV2ray port 443
+		const วเลสMain = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart;
+		const วเลสSec = atob(pt) + '://' + userID + atob(at) + พร็อกซีไอพี + commonUrlPart1;
+		return `<h2>UUID: ${userID}</h2>${hashSeparator}\nv2ray 433
 ---------------------------------------------------------------
-${vlessTls}
-<button onclick='copyToClipboard("${vlessTls}")'><i class="fa fa-clipboard"></i> Copy Main</button>
+${วเลสMain}
+<button onclick='copyToClipboard("${วเลสMain}")'><i class="fa fa-clipboard"></i> Copy </button>
 ---------------------------------------------------------------
-v2ray port 80
+v2ray 80
 ---------------------------------------------------------------
-${vlessNtls}
-<button onclick='copyToClipboard("${vlessNtls}")'><i class="fa fa-clipboard"></i> Copy Sec</button>
+${วเลสSec}
+<button onclick='copyToClipboard("${วเลสSec}")'><i class="fa fa-clipboard"></i> Copy </button>
 ---------------------------------------------------------------`;
 	}).join('\n');
 	const sublink = `https://${hostName}/sub/${userIDArray[0]}?format=clash`
@@ -728,7 +728,6 @@ ${vlessNtls}
 	const header = `
 <p align='center'><img src='https://cloudflare-ipfs.com/ipfs/bafybeigd6i5aavwpr6wvnwuyayklq3omonggta4x2q7kpmgafj357nkcky' alt='' style='margin-bottom: -50px;'>
 <b style='font-size: 15px;'>
-<a href='https://github.com/win877969/zona' target='_blank'>ZONA VLESS</a></b>
 ========================================
 VLESS ACCOUNT INFORMATION
 =========================================
@@ -741,14 +740,16 @@ VLESS ACCOUNT INFORMATION
 » PORT NTLS   : 80
 » SECURITY    : auto
 » NETWORK     : (WS)
-» PATH        :/vl=35.219.15.90
-
+» PATH        :/vl=35.219.15.90</b>
+<b style='font-size: 15px;'></b>
+<a href='https://github.com/win877969/zona' target='_blank'>ZONA VLESS</a>
+`;
 
 	// HTML Head with CSS and FontAwesome library
 	const htmlHead = `
   <head>
 	<title>Bedebah: configuration</title>
-	//<meta name='description' content='This is a tool for generating วเลส protocol configurations. Give us a star on GitHub https://github.com/win877969/zona if you found it useful!'>
+	<meta name='description' content='This is a tool for generating วเลส protocol configurations. Give us a star on GitHub https://github.com/win877969/zona if you found it useful!'>
 	<meta name='keywords' content='Bedebah, cloudflare pages, cloudflare worker, severless'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<meta property='og:site_name' content='Bedebah: วเลส configuration' />

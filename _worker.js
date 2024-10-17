@@ -847,16 +847,16 @@ function createValueSub(userID_path, hostname) {
 				const partUrl = `${hostname}-HTTP-${port}`;
 				const mainvalueHttp = atob(pt) + '://' + userid + atob(at) + hostname + ':' + port + commonUrlpartHttp + Urlpart;
 				return proxyIPs.flatMap((proxyIP) => {
-					const Http subval = atob(pt) + '://' + userid + atob(at) + proxyip + ':' + port + genericUrlHttp + Url + '-' + proxyip + '-' + atob(ed);
+					const Httpsubval = atob(pt) + '://' + userid + atob(at) + proxyip + ':' + port + genericUrlHttp + Url + '-' + proxyip + '-' + atob(ed);
 					return [Http main value, Http sub value];
 				});
 			}
 			return [];
 		});
 
-		const Https configuration = Array.from(Https port set).flatMap((port) => {
+		const Httpsconfiguration = Array.from(Https port set).flatMap((port) => {
 			const partUrl = `${hostname}-HTTPS-${port}`;
-			const mainvalueHttps = atob(pt) + '://' + userid + atob(at) + hostname + ':' + port + commonUrl partHttps + Url part;
+			const mainvalueHttps = atob(pt) + '://' + userid + atob(at) + hostname + ':' + port + commonUrlpartHttps + Urlpart;
 			return proxyIPs.flatMap((proxyIP) => {
 				const Https subvalid = atob(pt) + '://' + userid + atob(at) + proxyip + ':' + port + genericUrlHttps + Url + '-' + proxyip + '-' + atob(ed);
 				return [mainHttpsValue, subHttpsValue];

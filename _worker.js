@@ -854,7 +854,7 @@ function createValueSub(userID_path, hostname) {
 			return [];
 		});
 
-		const Httpsconfiguration = Array.from(Https port set).flatMap((port) => {
+		const Httpsconfiguration = Array.from(Httpsportset).flatMap((port) => {
 			const partUrl = `${hostname}-HTTPS-${port}`;
 			const mainvalueHttps = atob(pt) + '://' + userid + atob(at) + hostname + ':' + port + commonUrlpartHttps + Urlpart;
 			return proxyIPs.flatMap((proxyIP) => {

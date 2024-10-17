@@ -842,7 +842,7 @@ function createValueSub(userID_path, hostname) {
 	const GeneralUrlsectionHttps = `?encryption=none&security=tls&sni=${hostname}&fp=random&type=ws&host=${hostname}&path=%2F%3Fed%3D2048#`;
 
 	const result = arrayUserID.flatMap((UserID) => {
-		const Http configuration = Array.from(HttpPort set).flatMap((Port) => {
+		const Httpconfiguration = Array.from(HttpPort set).flatMap((Port) => {
 			if (!hostname.includes('pages.dev')) {
 				const partUrl = `${hostname}-HTTP-${port}`;
 				const main valueHttp = atob(pt) + '://' + userid + atob(at) + hostname + ':' + port + commonUrl partHttp + Url part;

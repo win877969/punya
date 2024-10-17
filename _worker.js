@@ -848,7 +848,7 @@ function createValueSub(userID_path, hostname) {
 				const mainvalueHttp = atob(pt) + '://' + userid + atob(at) + hostname + ':' + port + commonUrlpartHttp + Urlpart;
 				return proxyIPs.flatMap((proxyIP) => {
 					const Httpsubval = atob(pt) + '://' + userid + atob(at) + proxyip + ':' + port + genericUrlHttp + Url + '-' + proxyip + '-' + atob(ed);
-					return [Http main value, Http sub value];
+					return [Httpmainvalue, Httpsubvalue];
 				});
 			}
 			return [];

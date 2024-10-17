@@ -707,17 +707,17 @@ function getวเลสConfig(userIDs, hostName) {
 
 	// Prepare output string for each userID
 	const output = userIDArray.map((userID) => {
-		const วเลสMain = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart;
-		const วเลสSec = atob(pt) + '://' + userID + atob(at) + พร็อกซีไอพี + commonUrlPart;
+		const VlessMain = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart;
+		const VlessSec = atob(pt) + '://' + userID + atob(at) + พร็อกซีไอพี + commonUrlPart;
 		return `<h2>UUID: ${userID}</h2>${hashSeparator}\nv2ray default ip
 ---------------------------------------------------------------
-${วเลสMain}
-<button onclick='copyToClipboard("${วเลสMain}")'><i class="fa fa-clipboard"></i> Copy วเลสMain</button>
+${VlessMain}
+<button onclick='copyToClipboard("${VlessMain}")'><i class="fa fa-clipboard"></i> Copy Main</button>
 ---------------------------------------------------------------
 v2ray with bestip
 ---------------------------------------------------------------
-${วเลสSec}
-<button onclick='copyToClipboard("${วเลสSec}")'><i class="fa fa-clipboard"></i> Copy วเลสSec</button>
+${VlessSec}
+<button onclick='copyToClipboard("${VlessSec}")'><i class="fa fa-clipboard"></i> Copy Sec</button>
 ---------------------------------------------------------------`;
 	}).join('\n');
 	const sublink = `https://${hostName}/sub/${userIDArray[0]}?format=clash`
@@ -725,7 +725,7 @@ ${วเลสSec}
 	const clash_link = `https://api.v1.mk/sub?target=clash&url=${encodeURIComponent(sublink)}&insert=false&emoji=true&list=false&tfo=false&scv=true&fdn=false&sort=false&new_name=true`;
 	// Prepare header string
 	const header = `
-<p align='center'><img src='https://cloudflare-ipfs.com/ipfs/bafybeigd6i5aavwpr6wvnwuyayklq3omonggta4x2q7kpmgafj357nkcky' alt='图片描述' style='margin-bottom: -50px;'>
+<p align='center'><img src='https://cloudflare-ipfs.com/ipfs/bafybeigd6i5aavwpr6wvnwuyayklq3omonggta4x2q7kpmgafj357nkcky' alt='' style='margin-bottom: -50px;'>
 <b style='font-size: 15px;'>SELAMAT DATANG :</b>
 <b style='font-size: 15px;'></b>
 <a href='https://github.com/win877969/zona' target='_blank'>ZONA VLESS</a>

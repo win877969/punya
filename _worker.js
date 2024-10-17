@@ -31,7 +31,7 @@ export default {
 		// uuid_validator(request);
 		try {
 			userID = env.UUID || userID;
-			Proxy IP = env.Proxy IP || Proxy IP;
+			ProxyIP = env.ProxyIP || ProxyIP;
 			dohURL = env.DNS_RESOLVER_URL || dohURL;
 			let userID_Path = userID;
 			if (userID.includes(',')) {

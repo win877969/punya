@@ -748,7 +748,7 @@ VLESS ACCOUNT INFORMATION
 	const htmlHead = `
   <head>
 	<title>Bedebah: configuration</title>
-	<meta name='description' content='This is a tool for generating วเลส protocol configurations. Give us a star on GitHub https://github.com/win877969/zona if you found it useful!'>
+	//<meta name='description' content='This is a tool for generating วเลส protocol configurations. Give us a star on GitHub https://github.com/win877969/zona if you found it useful!'>
 	<meta name='keywords' content='Bedebah, cloudflare pages, cloudflare worker, severless'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<meta property='og:site_name' content='Bedebah: วเลส configuration' />

@@ -701,7 +701,7 @@ const ed = 'RUR0dW5uZWw=';
 function getวเลสConfig(userIDs, hostName) {
 	const commonUrlPart = `:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=%/vl=35.219.15.90#${hostName}`;
     const commonUrlPart1 = `:80?path=/vl=35.219.15.90&security=none&encryption=none&host=${hostName}&fp=randomized&type=ws&sni=${hostName}#$VlessNtls`;
-	const hashSeparator = "-----------------------------------------------------------------------------------------------------------------------------";
+	//const hashSeparator = "-----------------------------------------------------------------------------------------------------------------------------";
 
 	// Split the userIDs into an array
 	const userIDArray = userIDs.split(",");
@@ -710,12 +710,12 @@ function getวเลสConfig(userIDs, hostName) {
 	const output = userIDArray.map((userID) => {
 		const วเลสMain = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart;
 		const วเลสSec = atob(pt) + '://' + userID + atob(at) + พร็อกซีไอพี + commonUrlPart1;
-		return `<h2>UUID: ${userID}</h2>${hashSeparator}\nv2ray 433
+		return `<h2>VLESS PORT 433</h2>
 ---------------------------------------------------------------
 ${วเลสMain}
 <button onclick='copyToClipboard("${วเลสMain}")'><i class="fa fa-clipboard"></i> Copy </button>
 ---------------------------------------------------------------
-v2ray 80
+<h2>VLESS PORT 80</h2>
 ---------------------------------------------------------------
 ${วเลสSec}
 <button onclick='copyToClipboard("${วเลสSec}")'><i class="fa fa-clipboard"></i> Copy </button>

@@ -726,7 +726,7 @@ ${วเลสSec}
 	const clash_link = `https://api.v1.mk/sub?target=clash&url=${encodeURIComponent(sublink)}&insert=false&emoji=true&list=false&tfo=false&scv=true&fdn=false&sort=false&new_name=true`;
 	// Prepare header string
 	const header = `
-<p align='center'><img src='https://cloudflare-ipfs.com/ipfs/bafybeigd6i5aavwpr6wvnwuyayklq3omonggta4x2q7kpmgafj357nkcky' alt='' style='margin-bottom: -50px;'>
+<p align='left'><img src='https://cloudflare-ipfs.com/ipfs/bafybeigd6i5aavwpr6wvnwuyayklq3omonggta4x2q7kpmgafj357nkcky' alt='' style='margin-bottom: -50px;'>
 <b style='font-size: 15px;'>
 ========================================
 VLESS ACCOUNT INFORMATION
@@ -741,8 +741,8 @@ VLESS ACCOUNT INFORMATION
 » SECURITY    : auto
 » NETWORK     : (WS)
 » PATH        :/vl=35.219.15.90</b>
-<b style='font-size: 15px;'></b>
-<a href='https://github.com/win877969/zona' target='_blank'>ZONA VLESS</a>
+<b style='font-size: 15px;'>
+<a href='https://github.com/win877969/zona' target='_blank'>ZONA VLESS</a></b>
 `;
 
 	// HTML Head with CSS and FontAwesome library

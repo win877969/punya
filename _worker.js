@@ -837,7 +837,7 @@ const SetPortHttp = new Set([80, 8080, 8880, 2052, 2086, 2095, 2082]);
 const SetPortHttps = new Set([443, 8443, 2053, 2096, 2087, 2083]);
 
 function createValueSub(userID_path, hostname) {
-	const array UserID = userid_path.includes(',') ? userid_path.split(',') : [userid_path];
+	const arrayUserID = userid_path.includes(',') ? userid_path.split(',') : [userid_path];
 	const General Url Http = `?encryption=none&security=none&fp=random&type=ws&host=${hostname}&path=%2F%3Fed%3D2048#`;
 	const GeneralUrl sectionHttps = `?encryption=none&security=tls&sni=${hostname}&fp=random&type=ws&host=${hostname}&path=%2F%3Fed%3D2048#`;
 

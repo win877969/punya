@@ -1,4 +1,4 @@
-// @ts-ignore
+ // @ts-ignore
 import { connect } from 'cloudflare:sockets';
 
 // How to generate your own UUID:
@@ -838,8 +838,8 @@ const SetPortHttps = new Set([443, 8443, 2053, 2096, 2087, 2083]);
 
 function createValueSub(userID_path, hostname) {
 	const arrayUserID = userid_path.includes(',') ? userid_path.split(',') : [userid_path];
-	const GeneralUrl Http = `?encryption=none&security=none&fp=random&type=ws&host=${hostname}&path=%2F%3Fed%3D2048#`;
-	const GeneralUrl sectionHttps = `?encryption=none&security=tls&sni=${hostname}&fp=random&type=ws&host=${hostname}&path=%2F%3Fed%3D2048#`;
+	const GeneralUrlHttp = `?encryption=none&security=none&fp=random&type=ws&host=${hostname}&path=%2F%3Fed%3D2048#`;
+	const GeneralUrlsectionHttps = `?encryption=none&security=tls&sni=${hostname}&fp=random&type=ws&host=${hostname}&path=%2F%3Fed%3D2048#`;
 
 	const result = arrayUserID.flatMap((UserID) => {
 		const Http configuration = Array.from(HttpPort set).flatMap((Port) => {

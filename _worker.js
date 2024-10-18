@@ -708,8 +708,10 @@ function getวเลสConfig(userIDs, hostName) {
 
 	// Prepare output string for each userID
 	const output = userIDArray.map((userID) => {
+    const วเลสSec = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart1;
+	const output2 = userIDArray.map((userID) =  {
 		const วเลสMain = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart;
-		const วเลสSec = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart1;
+		
 		return `<h2>VLESS PORT 433</h2>
 ---------------------------------------------------------------
 ${วเลสMain}
@@ -725,7 +727,7 @@ ${วเลสSec}
 	const subbestip = `https://${hostName}/bestip/${userIDArray[0]}`;
 	const clash_link = `https://api.v1.mk/sub?target=clash&url=${encodeURIComponent(sublink)}&insert=false&emoji=true&list=false&tfo=false&scv=true&fdn=false&sort=false&new_name=true`;
 	// Prepare header string
-	const header = `
+	const output1 = `
 <p align='left'><img src='https://cloudflare-ipfs.com/ipfs/bafybeigd6i5aavwpr6wvnwuyayklq3omonggta4x2q7kpmgafj357nkcky' alt='' style='margin-bottom: -50px;'>
 <b style='font-size: 15px;'>
 ========================================
@@ -820,7 +822,9 @@ VLESS ACCOUNT INFORMATION
   ${htmlHead}
   <body>
   <pre style='background-color: transparent; border: none;'>${header}</pre>
+  <pre>${output1}</pre>
   <pre>${output}</pre>
+  <pre>${output2}</pre>
   </body>
   <script>
 	function copyToClipboard(text) {

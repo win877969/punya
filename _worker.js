@@ -709,8 +709,8 @@ function getวเลสConfig(userIDs, hostName) {
 	// Prepare output string for each userID
 	const output = userIDArray.map((userID) => {
     const วเลสSec = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart1;
-	const output = userIDArray.map((userID) =  {
-		const วเลสMain = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart;
+	const output2 = userIDArray.map((userID) => {
+    const วเลสMain = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart;
 		
 		return `<h2>VLESS PORT 433</h2>
 ---------------------------------------------------------------

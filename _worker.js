@@ -4,8 +4,8 @@ import { connect } from 'cloudflare:sockets';
 // How to generate your own UUID:
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = 'd342d11e-d424-4583-b36e-524ab1f0afa4';
-
-const พร็อกซีไอพีs = ['quiz.vidio.com', 'quiz.vidio.com', 'quiz.vidio.com'];
+const พร็อกซีไอพีs = ['51.79.254.182', 'https://ipdb.api.030101.xyz/?type=bestproxy&country=true', 'bestcf.onecf.eu.org', 'cfip.xxxxxxxx.tk', 'bestproxy.onecf.eu.org', 'proxy.xxxxxxxx.tk', 'acjp2.cloudflarest.link:2053', 'acsg.cloudflarest.link:2053', 'acsg3.cloudflarest.link:2053', 'cdn-b100.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org', 'xn--b6gac.eu.org', '194.58.56.87', '129.150.37.203', '18.141.204.88', '202.10.42.30', '52.74.101.26', '8.219.98.13'];
+//const พร็อกซีไอพีs = ['quiz.vidio.com', 'quiz.vidio.com', 'quiz.vidio.com'];
 
 // if you want to use ipv6 or single พร็อกซีไอพี, please add comment at this line and remove comment at the next line
 let พร็อกซีไอพี = พร็อกซีไอพีs[Math.floor(Math.random() * พร็อกซีไอพีs.length)];
@@ -19,6 +19,342 @@ let dohURL = 'https://freedns.controld.com/p0'; // https://github.com/serverless
 if (!isValidUUID(userID)) {
 	throw new Error('uuid is invalid');
 }
+
+
+function homePageHTML() {
+    return `
+
+            <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Akun Vless Gratis - Vanitas</title>
+        <meta name="description" content="Akun Vless Gratis.">
+        <meta name="keywords" content="Anggavless, Vless Gratis, Free Vless, Vless CF, Trojan CF, Cloudflare">
+        <meta name="author" content="Angga Alfarizi">
+        <meta name="robots" content="index, follow">
+        <!-- Open Graph Meta Tags untuk SEO Media Sosial -->
+        <meta property="og:title" content="Akun Vless Gratis - Akun Vless Cloudflare">
+        <meta property="og:description" content="Anggavless, Vless Gratis, Free Vless, Vless CF, Trojan CF, Cloudflare.">
+        <meta property="og:image" content="https://raw.githubusercontent.com/angga03k/papipu/main/img/img-2.png">
+        <!-- Ganti dengan URL gambar yang sesuai -->
+        <meta property="og:url" content="https://raw.githubusercontent.com/angga03k/papipu/main/img/gsmbar.img.jpg">
+        <meta property="og:type" content="website">
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Akun Vless Gratis - Akun Vless Cloudflare">
+        <meta name="twitter:description" content="Anggavless, Vless Gratis, Free Vless, Vless CF, Trojan CF, Cloudflare.">
+        <meta name="twitter:image" content="https://raw.githubusercontent.com/angga03k/papipu/main/img/gsmbar.img.jpg">
+        <!-- Ganti dengan URL gambar yang sesuai -->
+        <link href="https://raw.githubusercontent.com/angga03k/papipu/main/img/img-2.png" rel="icon" type="image/png">
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                font-family: 'Helvetica Neue', Arial, sans-serif;
+                background-color: #121212;
+                color: #ffffff;
+                margin: 0;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                position: relative;
+                /* Untuk positioning watermark */
+            }
+
+            .container {
+                background-color: #1d1d1d;
+                /* Warna gelap dengan nuansa lebih dalam */
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+                padding: 30px;
+                width: 100%;
+                max-width: 600px;
+                border: 1px solid #121212;
+                position: relative;
+                /* Untuk positioning watermark */
+            }
+
+            h2 {
+                text-align: center;
+                margin: 0;
+                color: #ffa500;
+                display: inline-block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            /* Animasi berubah warna untuk setiap huruf */
+            .animated-text span {
+                display: inline-block;
+                font-size: 24px;
+                animation: color-change 3s infinite;
+                font-weight: bold;
+            }
+
+            .animated-text span:nth-child(1) {
+                animation-delay: 0s;
+            }
+
+            .animated-text span:nth-child(2) {
+                animation-delay: 0.1s;
+            }
+
+            .animated-text span:nth-child(3) {
+                animation-delay: 0.2s;
+            }
+
+            .animated-text span:nth-child(4) {
+                animation-delay: 0.3s;
+            }
+
+            .animated-text span:nth-child(5) {
+                animation-delay: 0.4s;
+            }
+
+            .animated-text span:nth-child(6) {
+                animation-delay: 0.5s;
+            }
+
+            .animated-text span:nth-child(7) {
+                animation-delay: 0.6s;
+            }
+
+            .animated-text span:nth-child(8) {
+                animation-delay: 0.7s;
+            }
+
+            .animated-text span:nth-child(9) {
+                animation-delay: 0.8s;
+            }
+
+            .animated-text span:nth-child(10) {
+                animation-delay: 0.9s;
+            }
+
+            .animated-text span:nth-child(11) {
+                animation-delay: 1s;
+            }
+
+            .animated-text span:nth-child(12) {
+                animation-delay: 1.1s;
+            }
+
+            @keyframes color-change {
+                0% {
+                    color: #ffa500;
+                }
+
+                20% {
+                    color: #ff4500;
+                }
+
+                40% {
+                    color: #ff6347;
+                }
+
+                60% {
+                    color: #ffd700;
+                }
+
+                80% {
+                    color: #32cd32;
+                }
+
+                100% {
+                    color: #ffa500;
+                }
+            }
+
+            pre {
+                white-space: pre-wrap;
+                word-wrap: break-word;
+                background-color: #2b2b2b;
+                border-radius: 8px;
+                padding: 15px;
+                color: #ffffff;
+                margin-bottom: 20px;
+                border: 1px solid #3c3c3c;
+                box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+            }
+
+            .button2 {
+                background-color: #ffa500;
+                border: none;
+                color: #1e1e1e;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 14px;
+                cursor: pointer;
+                border-radius: 5px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+                transition: background-color 0.3s ease, transform 0.2s ease;
+            }
+
+            .button2:hover {
+                background-color: #ff8c00;
+                transform: scale(1.05);
+            }
+
+            .watermark {
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 0.8rem;
+                color: rgba(255, 255, 255, 0.5);
+                /* Warna watermark dengan transparansi */
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+                /* Bayangan teks untuk keterbacaan */
+                font-weight: bold;
+                text-align: center;
+                /* Pusatkan teks watermark */
+            }
+
+            .watermark a {
+                color: #ffa500;
+                /* Warna teks link */
+                text-decoration: none;
+                /* Menghapus garis bawah link */
+                font-weight: bold;
+                /* Menambahkan ketebalan pada teks */
+            }
+
+            .watermark a:hover {
+                color: #ffa500;
+                /* Warna link saat hover */
+            }
+
+            .user-id-wrapper {
+                display: inline-block;
+                max-width: 14ch;
+                /* Menampilkan 15 karakter pada tampilan awal */
+                overflow-x: auto;
+                /* Mengaktifkan scrollbar horizontal jika diperlukan */
+                white-space: nowrap;
+                /* Mencegah teks membungkus ke baris berikutnya */
+                background-color: transparent;
+                /* Latar belakang transparan */
+                border: none;
+                /* Menghapus border */
+                padding: 0;
+                /* Menghapus padding */
+                font-weight: bold;
+                /* Menambahkan ketebalan pada teks */
+            }
+
+            .ordered-list {
+                margin: 20px 0;
+                padding-left: 20px;
+                color: #ffa500;
+            }
+
+            .ordered-list li {
+                margin-bottom: 10px;
+                padding-left: 10px;
+                list-style-position: inside;
+                font-weight: bold;
+            }
+
+            .noted {
+                margin-top: 20px;
+                color: #ff4500;
+                font-weight: bold;
+                font-style: italic;
+            }
+
+            .noted1 {
+                margin-top: 20px;
+                color: #ffa500;
+                font-weight: bold;
+                font-style: italic;
+                line-height: 1.5;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="animated-text">
+                <span>C</span>
+                <span>F</span>
+                <span>-</span>
+                <span>P</span>
+                <span>R</span>
+                <span>E</span>
+                <span>M</span>
+                <span>.</span>
+                <span>B</span>
+                <span>M</span>
+                <span>K</span>
+                <span>G</span>
+                <span>.</span>
+                <span>X</span>
+                <span>Y</span>
+                <span>Z</span>
+            </h2>
+            <pre>
+																				<b>
+» Domain      : cf-prem.bmkg.xyz
+» ISP         : Telekomunikasi Indonesia
+» Country     : Indonesia
+» City        : Jakarta
+» User ID     : <span class="user-id-wrapper">d2eed70a-4102-42b0-8b40-279e6d901a02</span>
+» Port TLS    : 443
+» Port NTLS   : 80
+» Security    : auto
+» Network     : (WS)
+» Path        : /?ed=2048
+</b>
+</pre> <pre> <b>FORMAT TLS 443 : <button class="button2" onclick='copyToClipboard("vless://d2eed70a-4102-42b0-8b40-279e6d901a02@cf-prem.bmkg.xyz:443?encryption=none&security=tls&sni=cf-prem.bmkg.xyz&fp=randomized&type=ws&host=cf-prem.bmkg.xyz&path=/?ed=2048#Telekomunikasi+Indonesia")'><i class="fa fa-clipboard"></i> Copy TLS 443</button> vless://d2eed70a-4102-42b0-8b40-279e6d901a02@cf-prem.bmkg.xyz:443?encryption=none&security=tls&sni=cf-prem.bmkg.xyz&fp=randomized&type=ws&host=cf-prem.bmkg.xyz&path=/?ed=2048#Telekomunikasi+Indonesia</b> </pre><pre><b>FORMAT NTLS 80  : <button class="button2" onclick='copyToClipboard("vless://d2eed70a-4102-42b0-8b40-279e6d901a02@cf-prem.bmkg.xyz:80?path=/?ed=2048&security=none&encryption=none&host=cf-prem.bmkg.xyz&fp=randomized&type=ws&sni=cf-prem.bmkg.xyz#Telekomunikasi+Indonesia")'><i class="fa fa-clipboard"></i> Copy NTLS 80 </button> vless://d2eed70a-4102-42b0-8b40-279e6d901a02@cf-prem.bmkg.xyz:80?path=/?ed=2048&security=none&encryption=none&host=cf-prem.bmkg.xyz&fp=randomized&type=ws&sni=cf-prem.bmkg.xyz#Telekomunikasi+Indonesia</b> </pre>
+            <h3>DAFTAR BUG</h3>
+            <ul class="ordered-list">
+                <li>graph.instagram.com</li>
+                <li>investors.spotify.com</li>
+                <li>cache.netflix.com</li>
+                <li>www.pubgmobile.com</li>
+                <li>dl.cvs.freefiremobile.com</li>
+                <li>ava.game.naver.com</li>
+                <li>support.zoom.us</li>
+                <li>quiz.int.vidio.com</li>
+                <li>blog.webex.com</li>
+                <li>live.iflix.com</li>
+                <li>zaintest.vuclip.com</li>
+                <li>sb.scorecardresearch.com</li>
+            </ul>
+            <h3>Cara Penggunaan Bug</h3>
+            <p class="noted1">Ganti BUG pada akun VLESS dengan salah satu domain Bug di atas,</p>
+            <h3>DAFTAR INJECT SIAP PAKAI</h3>
+            <p class="noted1">KLICK LIMK AND COPY</p>
+            <ul class="ordered-list">
+                <li>cf-prem.bmkg.xyz</li>
+            </ul>
+            <p class="noted">Noted: Pastikan untuk memeriksa konfigurasi dengan teliti sebelum digunakan.</p>
+            <div class="watermark"> Develoved by <a href="https://t.me/seaker877" target="_blank">X-VPN</a>
+            </div>
+        </div>
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+        <script>
+            function copyToClipboard(text) {
+                navigator.clipboard.writeText(text).then(() => {
+                    alert("Copied to clipboard");
+                }).catch((err) => {
+                    console.error("Failed to copy to clipboard:", err);
+                });
+            }
+        </script>
+    </body>
+</html>
+`;
+}
+
 
 export default {
 	/**
